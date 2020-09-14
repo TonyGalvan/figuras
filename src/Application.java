@@ -1,5 +1,7 @@
 package com.figuras;
 
+
+
 import com.figuras.model.Circle;
 import com.figuras.model.Rectangle;
 import com.figuras.model.Square;
@@ -14,12 +16,20 @@ public class Application {
         Square squares[] = new Square[5];
         Triangle triangle = new Triangle(10, 20);
 
+        squares[0] = new Square(10);
+        squares[1] = new Square(5);
+        squares[2] = new Square(6);
+        squares[3] = new Square(20);
+        squares[4] = new Square(30);
 
-        printFigure(circle1);
-        printFigure(rectangle);
+
+
         for (Square square : squares) {
             printFigure(square);
         }
+
+        printFigure(circle1);
+        printFigure(rectangle);
         printFigure(triangle);
 
     }

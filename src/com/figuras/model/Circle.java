@@ -8,7 +8,9 @@ public class Circle {
     }
 
     public double getArea(){
-        return 0;
+        double area_circle;
+        area_circle = Math.PI*(Math.pow(radio, 2));
+        return area_circle;
     }
 
     public void draw(){
